@@ -3,6 +3,7 @@
 %define skelcdpath %{_prefix}/lib/skelcd
 #
 #
+%global debug_package %{nil}
 Name:           skelcd-CentOS
 Version:        8
 Release:        0
