@@ -10,14 +10,14 @@ Summary:        Skeleton for CentOS Media Sets
 License:        MIT
 Group:          Metapackages
 Url:            https://github.com/ganapathichidambaram/skelcd-CentOS
-Source:         skelcd-CentOS.tar.xz
+Source:         skelcd-CentOS-%{version}.tar.xz
 
 %description
 Internal package only, used for CentOS Media sets
 
 
 %prep
-%setup -q %{name}
+%setup -q
 
 %build
 
