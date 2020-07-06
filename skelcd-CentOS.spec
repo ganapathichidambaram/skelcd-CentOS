@@ -25,7 +25,7 @@ Internal package only, used for CentOS Media sets
 mkdir -p %{buildroot}%{?skelcdpath}/CD1/
 cp skelcd/* %{buildroot}%{?skelcdpath}/CD1/
 cp skelcd/.treeinfo %{buildroot}%{?skelcdpath}/CD1/.treeinfo
-cp skelcd/.diskinfo %{buildroot}%{?skelcdpath}/CD1/.diskinfo
+cp skelcd/.discinfo %{buildroot}%{?skelcdpath}/CD1/.discinfo
 
 
 %files
