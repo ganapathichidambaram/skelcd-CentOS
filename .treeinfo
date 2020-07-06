@@ -1,0 +1,67 @@
+[checksums]
+images/efiboot.img = sha256:c8ea58ca5eff7b48a4efde743eb4637517127d11f2a93ee1b76bf6b9a146dfd3
+images/install.img = sha256:1416418190dbd53ae9d6b501d8d84572006c6cad184bb4c37fea736882d6423b
+images/pxeboot/initrd.img = sha256:334109b52b51f454a94872b6ac9e9d7ec77b98b3fa28a5223a959db034e43272
+images/pxeboot/vmlinuz = sha256:151fb7b594cb096e25769688cc748eefafeea133894878271bf9c428dba2cc71
+
+[general]
+; WARNING.0 = This section provides compatibility with pre-productmd treeinfos.
+; WARNING.1 = Read productmd documentation for details about new format.
+arch = x86_64
+family = CentOS Linux
+name = CentOS Linux 8
+packagedir = BaseOS/Packages
+platforms = x86_64,xen
+repository = BaseOS
+timestamp = 1594058514
+variant = BaseOS
+variants = BaseOS,Minimal
+version = 8
+
+[header]
+type = productmd.treeinfo
+version = 1.2
+
+[images-x86_64]
+efiboot.img = images/efiboot.img
+initrd = images/pxeboot/initrd.img
+kernel = images/pxeboot/vmlinuz
+
+[images-xen]
+initrd = images/pxeboot/initrd.img
+kernel = images/pxeboot/vmlinuz
+
+[media]
+discnum = 1
+totaldiscs = 1
+
+[release]
+name = CentOS Linux
+short = CentOS
+version = 8
+
+[stage2]
+mainimage = images/install.img
+
+[tree]
+arch = x86_64
+build_timestamp = 1594058514
+platforms = x86_64,xen
+variants = BaseOS,Minimal
+
+[variant-BaseOS]
+id = BaseOS
+name = BaseOS
+packages = BaseOS/Packages
+repository = BaseOS
+type = variant
+uid = BaseOS
+
+[variant-Minimal]
+id = Minimal
+name = Minimal
+packages = Minimal/Packages
+repository = Minimal
+type = variant
+uid = Minimal
+
